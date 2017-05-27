@@ -2,6 +2,10 @@
 
 ### Status of project : *Aborted*
 
+## Technologies
+
+[Angular(Typescript)](https://angular.io/), [Node.js](https://nodejs.org), [Express](http://expressjs.com), [AWS](https://aws.amazon.com)
+
 ## What is it ?
 
 It's a web service to link you Twitch.tv and League of Legends account.
