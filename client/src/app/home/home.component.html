@@ -1,0 +1,58 @@
+<div class="search_div">
+  <form (submit)="search(searchInput.value)" class="">
+    <input #searchInput type="text" class="long" placeholder="Search twitch user..." required autofocus>
+    <button type="submit">Search</button>
+  </form>
+</div>
+<div class="video_button_div">
+  <button (click)="showHowItWorks=!showHowItWorks" class="button button-and-icon button-delete">
+    <div>
+      <i class="fa fa-youtube-play icon-large"></i>
+    </div>
+    How it Works ?
+  </button>
+</div>
+<div *ngIf="showHowItWorks" class="video_howitworks">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/n19Ql_gJfAo" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="container comments">
+  <h1>What to do with TwitchLolRank ?</h1>
+  <hr>
+  <h3>Say to other people on Twitch if you are beginner or master !</h3>
+  <div class="comment">
+    <i class="fa fa-chevron-right"></i>You can search twitch users to see what are there League of Legends accounts and rank.
+  </div>
+  <div class="comment">
+    <i class="fa fa-chevron-right"></i>You can link your League of Legends accounts to your Twitch account to say to other twitch users what is your rank.
+  </div>
+</div>
+<div class="container comments">
+  <h1>How to link your Twitch and Lol accounts ?</h1>
+  <hr>
+  <div class="comment">
+    <span>1</span>Go on League of legends and invite twitchlolrank as friend. You will instantly receive a link by chat.
+  </div>
+  <div class="comment">
+    <span>2</span>Go on the link and click on the claim button. You will be able to link to the Twitch account you want
+  </div>
+  <div class="comment">
+    <span>3</span>It's all right you have succesfully bind your twitch and League of legends accounts. You can register more League of legends account to your Twitch account or link your League of Legends account to another Twitch account, just repeat the same process.
+  </div>
+</div>
+<div class="container">
+  <h1>Browser extensions - Coming soon !</h1>
+  <h3>See ranks directly in Twitch chats !</h3>
+  <hr>
+  <div class="browser_extensions">
+    <div class="browser_extension">
+      <a href="#">
+        <img src="assets/chrome_logo.png" alt="Chrome logo"/>
+      </a>
+    </div>
+    <div class="browser_extension">
+      <a href="#">
+        <img src="assets/firefox_logo.png" alt="Firefox logo"/>
+      </a>
+    </div>
+  </div>
+</div>

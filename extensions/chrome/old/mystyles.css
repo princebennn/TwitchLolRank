@@ -1,0 +1,17 @@
+/* The animation code */
+@keyframes breath {
+    0%   {background-color: #6441a4;}
+    50%  {background-color: #7D5BBE;}
+    100% {background-color: #6441a4;}
+}
+
+.twitchlolrank-button {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px !important;
+    animation-name: breath;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}

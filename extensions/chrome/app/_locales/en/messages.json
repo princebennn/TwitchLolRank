@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "TwitchLolRank",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "This extension shows League of Legends ranks on Twitch chat.",
+    "description": "The description of the application"
+  }
+}

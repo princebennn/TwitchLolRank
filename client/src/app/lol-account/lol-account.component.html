@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>{{lolAccount.username}}</h1><h5>{{lolAccount.region}}</h5>
+  <hr>
+  <div class="ranks-container">
+    <div *ngIf="lolAccount.ranks.length == 0">
+      It's seems there is no ranks for this summoner :/
+    </div>
+    <div class="rank" *ngFor="let rank of lolAccount.ranks">
+      <div class="rank-logo">
+        <img src="http://www.lolking.net/images/medals/{{rank.rank.toLowerCase()}}_{{rank.division}}.png" alt="league of legends rank medal" />
+      </div>
+      <div class="rank-infos">
+        <div class="rank-queue">
+          {{rank.queue}}
+        </div>
+        <div class="rank-division">
+          {{rank.rank}} {{rank.division}}
+        </div>
+        <div class="rank-points">
+          {{rank.league_points}} LP
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="more-button">
+    <a href="http://{{lolAccount.region}}.op.gg/summoner/userName={{lolAccount.username}}" class="button button-submit">Op.gg</a>
+    <a href="http://www.lolnexus.com/{{lolAccount.region}}/search?name={{lolAccount.username}}&region={{lolAccount.region}}" class="button button-submit">LolNexus</a>
+    <a href="http://www.lolking.net/summoner/{{lolAccount.region.toLowerCase()}}/{{lolAccount.summoner_id}}" class="button button-submit">LolKing</a>
+    <a href="http://www.lolskill.net/summoner/{{lolAccount.region}}/{{lolAccount.username}}" class="button button-submit">LolSkill</a>
+  </div>
+</div>

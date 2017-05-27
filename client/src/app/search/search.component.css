@@ -1,0 +1,19 @@
+.search_div {
+  margin-bottom: 20px;
+  margin-left: auto;
+  width: 529px;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 640px) {
+  .search_div {
+    width: 90vw;
+  }
+}
+
+.twitchLink {
+  width: 23vw;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,23 @@
+<div *ngIf="claiming" class="container">
+  <a href="https://api.twitch.tv/kraken/oauth2/authorize?response_type=code&state={{urlHash}}&client_id=3s7g263hveu21ola19tva9mi6pxgjq&redirect_uri=https://twitchlolrank.com/claim&scope=user_read" class="button button-submit button-buy">Claim this summoner !</a>
+</div>
+<div *ngIf="loading" class="loader">
+
+</div>
+<div *ngIf="!loading && !claiming" class="">
+  <div *ngIf="!success" class="flash error">
+    <span>
+      <i class="icon-2x icon-warning-sign"></i>
+    </span>
+    <p>An error occured ! Repeat the process maybe it will work ;)</p>
+  </div>
+  <div *ngIf="success" class="flash success">
+    <span>
+      <i class="icon-2x icon-smile"></i>
+    </span>
+    <p>You succesfully claim this League of Legend account</p>
+  </div>
+  <div class="account-button">
+    <a [routerLink]="['/search', twitchUsername]" class="button button-submit button-buy">Return to my TwitchLolRank account</a>
+  </div>
+</div>

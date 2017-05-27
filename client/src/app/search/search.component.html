@@ -1,0 +1,23 @@
+<div class="search_div">
+  <form class="">
+    <input #searchValue type="text" class="long" placeholder="Search twitch user..." required autofocus value="{{twitchUsername}}">
+    <button type="submit" (click)="onSearch(searchValue.value)">Search</button>
+  </form>
+</div>
+<div *ngIf="success" class="">
+  <div class="twitchLink">
+    <a href="https://www.twitch.tv/{{twitchUser.twitchUsername}}" target="_blank" class="button button-submit button-buy">Twitch user account</a>
+  </div>
+  <div class="lol-accounts">
+    <app-lol-account [lolAccount]="lolAccount" *ngFor="let lolAccount of twitchUser.lolAccounts"></app-lol-account>
+  </div>
+</div>
+<div *ngIf="error" class="container">
+  <h1>Sorry :(</h1>
+  <hr>
+  We don't find this user in our Database <br>
+  Maybe you know him and you can invite him to join TwitchLolRank ? :)
+</div>
+<div *ngIf="noAccounts" class="container">
+  <h3>No League of legends accout for this Twitch user</h3>
+</div>

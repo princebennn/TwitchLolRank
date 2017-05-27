@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "bluebird": "^3.4.6",
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "cron": "^1.1.1",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "mysql": "^2.12.0",
+    "node-xmpp-client": "^3.1.1",
+    "randomstring": "^1.1.5",
+    "roman-numerals": "^0.3.2",
+    "serve-favicon": "~2.3.0",
+    "server-lol-chat": "^1.0.1"
+  }
+}
