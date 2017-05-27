@@ -1,4 +1,4 @@
-# TwitchLolRank
+# TwitchLolRank - 2016
 
 ### Status of project : *Aborted*
 
